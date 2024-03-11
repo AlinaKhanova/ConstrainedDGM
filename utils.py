@@ -85,6 +85,7 @@ def log_dict(name, results, logger):
 
 
 def get_roundable_data(df):
+    df["RiskPerformance"] = (df["RiskPerformance"] == "Bad").astype(int)
     _is_roundable = ((df%1)==0).all(axis=0)
     roundable_cols = df.columns[_is_roundable]
     roundable_idx = [df.columns.get_loc(c) for c in roundable_cols]
@@ -127,3 +128,13 @@ def read_csv(csv_filename, use_case="", manual_inspection_cat_cols_idx=[]):
         bin_cols_idx = None
         cat_cols_names = None
     return data, (cat_cols_names, bin_cols_idx), (roundable_idx, round_digits)
+
+#%%
+import pandas as pd
+
+df = pd.read_csv("data/heloc/train_data.csv")
+df["RiskPerformance"] = (df["RiskPerformance"] == "Bad").astype(int)
+df
+
+#%%
+df.to_csv("data/heloc/val_data.csv", index=False)
