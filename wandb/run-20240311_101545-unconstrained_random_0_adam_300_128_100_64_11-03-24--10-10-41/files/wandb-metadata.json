@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-03-11T09:15:47.088798",
+    "startedAt": "2024-03-11T09:15:45.910716",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "wids",
+        "--seed=0",
+        "--epochs=300",
+        "--optimiser=adam",
+        "--lr=0.0010",
+        "--batch_size=128",
+        "--random_dim=100"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\yyyfa\\ConstrainedDGM\\main_tableGAN.py",
+    "codePathLocal": "main_tableGAN.py",
+    "codePath": "main_tableGAN.py",
+    "git": {
+        "remote": "https://github.com/mihaela-stoian/ConstrainedDGM.git",
+        "commit": "8500f315fef849ac3003d5be114ec8092b2b29aa"
+    },
+    "email": "51331622+AlinaKhanova@users.noreply.github.com",
+    "root": "C:/Users/yyyfa/ConstrainedDGM",
+    "host": "LAPTOP-U13K4D5Q",
+    "username": "yyyfa",
+    "executable": "D:\\Python\\envs\\cdgm\\python.exe",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2592.0,
+        "min": 0.0,
+        "max": 2592.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2592.0,
+            "min": 0.0,
+            "max": 2592.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 119.99999618530273,
+            "used": 114.56900024414062
+        }
+    },
+    "memory": {
+        "total": 7.8376922607421875
+    }
+}

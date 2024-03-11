@@ -1,0 +1,46 @@
+
+{'problem_type': 'binary_classification', 'target_col': 'hospital_death', 'target_size': 2, 'manual_inspection_categorical_cols_idx': [108], 'feats_in_constraints': [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94]}
+Traceback (most recent call last):
+  File "C:\Users\yyyfa\ConstrainedDGM\main_tableGAN.py", line 199, in <module>
+    main()
+  File "C:\Users\yyyfa\ConstrainedDGM\main_tableGAN.py", line 82, in main
+    X_train, (cat_cols, cat_idx), (roundable_idx, round_digits) = read_csv(f"data/{args.use_case}/train_data.csv", args.use_case, dataset_info["manual_inspection_categorical_cols_idx"])
+  File "C:\Users\yyyfa\ConstrainedDGM\utils.py", line 110, in read_csv
+    data = pd.read_csv(csv_filename)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'data/wids/train_data.csv'
+Traceback (most recent call last):
+  File "C:\Users\yyyfa\ConstrainedDGM\main_tableGAN.py", line 199, in <module>
+    main()
+  File "C:\Users\yyyfa\ConstrainedDGM\main_tableGAN.py", line 82, in main
+    X_train, (cat_cols, cat_idx), (roundable_idx, round_digits) = read_csv(f"data/{args.use_case}/train_data.csv", args.use_case, dataset_info["manual_inspection_categorical_cols_idx"])
+  File "C:\Users\yyyfa\ConstrainedDGM\utils.py", line 110, in read_csv
+    data = pd.read_csv(csv_filename)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\util\_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\util\_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\parsers\readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\parsers\readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\parsers\readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\parsers\readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\io\common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'data/wids/train_data.csv'

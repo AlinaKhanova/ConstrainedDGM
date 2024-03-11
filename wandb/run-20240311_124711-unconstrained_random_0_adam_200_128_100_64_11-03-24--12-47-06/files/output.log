@@ -1,0 +1,76 @@
+
+{'problem_type': 'binary_classification', 'target_col': 'is_at_risk', 'target_size': 2, 'manual_inspection_categorical_cols_idx': [23], 'feats_in_constraints': [1, 2, 4, 5, 6, 11, 12, 19, 20, 21]}
+Traceback (most recent call last):
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\array_ops.py", line 165, in _na_arithmetic_op
+    result = func(left, right)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\computation\expressions.py", line 242, in evaluate
+    return _evaluate_standard(op, op_str, a, b)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+TypeError: not all arguments converted during string formatting
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "C:\Users\yyyfa\ConstrainedDGM\main_tableGAN.py", line 199, in <module>
+    main()
+  File "C:\Users\yyyfa\ConstrainedDGM\main_tableGAN.py", line 82, in main
+    X_train, (cat_cols, cat_idx), (roundable_idx, round_digits) = read_csv(f"data/{args.use_case}/train_data.csv", args.use_case, dataset_info["manual_inspection_categorical_cols_idx"])
+  File "C:\Users\yyyfa\ConstrainedDGM\utils.py", line 112, in read_csv
+    roundable_idx, round_digits = get_roundable_data(data)
+  File "C:\Users\yyyfa\ConstrainedDGM\utils.py", line 88, in get_roundable_data
+    _is_roundable = ((df%1)==0).all(axis=0)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\common.py", line 72, in new_method
+    return method(self, other)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\arraylike.py", line 142, in __mod__
+    return self._arith_method(other, operator.mod)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\frame.py", line 7594, in _arith_method
+    new_data = self._dispatch_frame_op(other, op, axis=axis)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\frame.py", line 7621, in _dispatch_frame_op
+    bm = self._mgr.apply(array_op, right=right)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\internals\managers.py", line 350, in apply
+    applied = b.apply(f, **kwargs)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\internals\blocks.py", line 351, in apply
+    result = func(self.values, **kwargs)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\array_ops.py", line 226, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\array_ops.py", line 172, in _na_arithmetic_op
+    result = _masked_arith_op(left, right, op)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\array_ops.py", line 129, in _masked_arith_op
+    result[mask] = op(xrav[mask], y)
+TypeError: not all arguments converted during string formatting
+Traceback (most recent call last):
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\array_ops.py", line 165, in _na_arithmetic_op
+    result = func(left, right)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\computation\expressions.py", line 242, in evaluate
+    return _evaluate_standard(op, op_str, a, b)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+TypeError: not all arguments converted during string formatting
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "C:\Users\yyyfa\ConstrainedDGM\main_tableGAN.py", line 199, in <module>
+    main()
+  File "C:\Users\yyyfa\ConstrainedDGM\main_tableGAN.py", line 82, in main
+    X_train, (cat_cols, cat_idx), (roundable_idx, round_digits) = read_csv(f"data/{args.use_case}/train_data.csv", args.use_case, dataset_info["manual_inspection_categorical_cols_idx"])
+  File "C:\Users\yyyfa\ConstrainedDGM\utils.py", line 112, in read_csv
+    roundable_idx, round_digits = get_roundable_data(data)
+  File "C:\Users\yyyfa\ConstrainedDGM\utils.py", line 88, in get_roundable_data
+    _is_roundable = ((df%1)==0).all(axis=0)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\common.py", line 72, in new_method
+    return method(self, other)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\arraylike.py", line 142, in __mod__
+    return self._arith_method(other, operator.mod)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\frame.py", line 7594, in _arith_method
+    new_data = self._dispatch_frame_op(other, op, axis=axis)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\frame.py", line 7621, in _dispatch_frame_op
+    bm = self._mgr.apply(array_op, right=right)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\internals\managers.py", line 350, in apply
+    applied = b.apply(f, **kwargs)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\internals\blocks.py", line 351, in apply
+    result = func(self.values, **kwargs)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\array_ops.py", line 226, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\array_ops.py", line 172, in _na_arithmetic_op
+    result = _masked_arith_op(left, right, op)
+  File "D:\Python\envs\cdgm\lib\site-packages\pandas\core\ops\array_ops.py", line 129, in _masked_arith_op
+    result[mask] = op(xrav[mask], y)
+TypeError: not all arguments converted during string formatting

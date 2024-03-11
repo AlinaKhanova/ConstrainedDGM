@@ -1,0 +1,113 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.13
+    cli_version: 0.16.4
+    framework: xgboost
+    huggingface_version: 4.38.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1710148826.0
+    t:
+      1:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 11
+      - 35
+      - 41
+      - 48
+      - 49
+      - 53
+      - 55
+      - 71
+      2:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 11
+      - 35
+      - 41
+      - 48
+      - 49
+      - 53
+      - 55
+      - 71
+      3:
+      - 14
+      - 19
+      - 23
+      4: 3.10.13
+      5: 0.16.4
+      6: 4.38.2
+      8:
+      - 3
+      - 5
+      13: windows-amd64
+seed:
+  desc: null
+  value: 0
+use_only_target_original_dtype:
+  desc: null
+  value: false
+label_ordering:
+  desc: null
+  value: random
+wandb_project:
+  desc: null
+  value: c-dgm_test
+wandb_mode:
+  desc: null
+  value: online
+epochs:
+  desc: null
+  value: 300
+num_samples:
+  desc: null
+  value: null
+save_every_n_epochs:
+  desc: null
+  value: 5
+random_dim:
+  desc: null
+  value: 100
+num_channels:
+  desc: null
+  value: 64
+l2scale:
+  desc: null
+  value: 1.0e-05
+lr:
+  desc: null
+  value: 0.001
+optimiser:
+  desc: null
+  value: adam
+batch_size:
+  desc: null
+  value: 128
+save:
+  desc: null
+  value: null
+load:
+  desc: null
+  value: null
+use_case:
+  desc: null
+  value: wids
+version:
+  desc: null
+  value: unconstrained
+skip_evaluation:
+  desc: null
+  value: false
+runtime_evaluation_only:
+  desc: null
+  value: false
+exp_path:
+  desc: null
+  value: outputs/TableGAN_out/wids/unconstrained/unconstrained_random_0_adam_300_128_100_64_11-03-24--10-20-23

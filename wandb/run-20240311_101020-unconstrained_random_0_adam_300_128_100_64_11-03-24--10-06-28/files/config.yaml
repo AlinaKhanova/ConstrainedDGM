@@ -1,0 +1,36 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.13
+    cli_version: 0.16.4
+    framework: xgboost
+    huggingface_version: 4.38.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1710148220.0
+    t:
+      1:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 11
+      - 35
+      - 41
+      - 48
+      - 49
+      - 53
+      - 55
+      - 71
+      3:
+      - 14
+      - 23
+      4: 3.10.13
+      5: 0.16.4
+      6: 4.38.2
+      8:
+      - 3
+      - 5
+      13: windows-amd64

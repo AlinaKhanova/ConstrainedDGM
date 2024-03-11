@@ -2,7 +2,7 @@
 import numpy as np
 #from constraints.constraints_operator import apply_or
 #from constraints.file_constraints import FileConstraints
-INFINITY = np.int32(1e16)
+INFINITY = np.int64(1e16)
 
 
 def apply_or(operands) -> np.ndarray:
